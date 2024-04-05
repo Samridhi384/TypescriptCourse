@@ -1,0 +1,53 @@
+Typescript is a superset of js
+ts is a powerful compiler which converts your ts in normal js code
+With some new features it also gives some error checking as before runtime error arose we can do error checking with ts . It also provides type checking for the same with nicer syntax.
+
+we will run js file only as ts can't run in browser so with ts we can solve our error easliy and get its js corrected js file
+
+js has dynamic types while ts has static types i.e. declared earlier 
+
+The core primitive types in TypeScript are all lowercase!
+
+with any data type we can run any type of data but then it will be also like vanilla js so its better to give specific type
+
+we can compile ts file tsc filename.ts
+
+but there are multiple files then tsc --init and then simply write tsc
+and for continuos compilation tsc --watch or -w
+
+"sourceMap": true will also show ts file in source tab also it has.map file and debugging can be done in ts file in browser source tab
+
+noEmitOnError : true if we do want to create js file if there is error in ts but it will not create any other js file even if that ts file is errorless
+
+primitive types are string , numbers , booleans which 
+
+refrence type are objects , arrays
+The stack is essentially an easy-to-access memory that simply manages its items as a - well - stack. Only items for which the size is known in advance can go onto the stack. This is the case for numbers, strings, booleans.
+
+The heap is a memory for items of which you can't pre-determine the exact size and structure. Since objects and arrays can be mutated and change at runtime, they have to go into the heap therefore.
+
+interface used to describe the structure of objects and its not in js only in ts , however it is not used as custom type 
+like interface we can use type also but there is difference like in type we can also use union type etc
+
+we can not do public or private in interface but can do readonly
+
+generic types provide additional information about the data types we need to return and helpful to complex classes or functions , provides more flexibilty wiht type safety to type of data we are not sure to use
+
+can be used in <T ,U extends object> etc
+
+geneic types are good when u want to lock certain type throghout the class or function 
+while in union type u can choose everytime the data type u want to choose
+
+about decorator
+DECORATORS
+
+A decorator is a function & u can find it either with a function decoration or as a function expression
+
+U can add more than 1 decorators to the same class 
+Execution of decorators happens from bottom to top
+We don't have to add all decorators directly to the class 
+
+
+use react with typescript 
+
+npx create-react-app   --template typescript
